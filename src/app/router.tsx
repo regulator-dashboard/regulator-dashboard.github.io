@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import LayoutShell from '../components/LayoutShell';
 import DashboardPage from '../features/dashboard/DashBoardPage';
 import MonitoringPage from '../features/monitor/MonitoringPage';
@@ -7,7 +7,7 @@ import RiskPage from '../features/risk/RiskPage';
 import PolicyPage from '../features/policy/PolicyPage';
 import SettingsPage from '../features/settings/SettingsPage';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <LayoutShell />,
