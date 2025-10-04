@@ -1,7 +1,8 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import { Table, Button, Tag } from 'antd';
-import { VehicleMetrics } from '../../types';
+import type { VehicleMetrics } from '../../types';
+
 
 type Row = { id: string; city: string; metrics: VehicleMetrics };
 
