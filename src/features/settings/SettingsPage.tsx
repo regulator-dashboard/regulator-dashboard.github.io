@@ -135,8 +135,7 @@ export default function SettingsPage() {
                     min={0}
                     max={100}
                     defaultValue={75}
-                    formatter={value => `${value}%`}
-                    parser={value => value!.replace('%', '')}
+                    addonAfter="%"
                     style={{ width: '100%' }}
                   />
                 </div>
